@@ -1,0 +1,197 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title>中心主题</title>
+</head>
+<body>
+<h1 align="center" class="root">
+<a name="3dbb7l1uh227obkee9fb6ajad3">中心主题</a>
+</h1>
+<div align="center" class="globalOverview">
+<img src="%E4%B8%AD%E5%BF%83%E4%B8%BB%E9%A2%98_files/images/%E4%B8%AD%E5%BF%83%E4%B8%BB%E9%A2%98.jpg"></div>
+<h2 class="topic">
+<a name="73d449057rtck3bkabu4o11evk">day16-day20 HybridApp</a>
+</h2>
+<h3 class="topic">
+<a name="0pk0lmi10aqrma395imehi819d">&nbsp;jdk安装配置</a>
+</h3>
+<div class="notesContainer">
+<p>http://product.pconline.com.cn/itbk/software/dnwt/1408/5260596.html#ad=7094</p>
+</div>
+<h3 class="topic">
+<a name="4g777tt31rtn3phr7eh292vs3a">&nbsp;&nbsp;安装JDK选择安装目录，安装过程中会出现两次安装提示。第一次是安装jdk，第二次是安装 jre。建议两个都安装在同一个java文件夹中的不同文件夹中。(不能都安装在java文件夹的根目录下，jdk和jre安装在同一文件夹会出错)。</a>
+</h3>
+<h3 class="topic">
+<a name="6nvfvombnjdnpank40aqa9t2fk">&nbsp;&nbsp;安装jre&rarr;更改&rarr;\java之前目录和安装 jdk目录相同即可。</a>
+</h3>
+<h3 class="topic">
+<a name="0bc48lae4fof7gpthde2qq5hus">&nbsp;&nbsp;安装完JDK后配置环境变量计算机&rarr;属性&rarr;高级系统设置&rarr;高级&rarr;环境变量</a>
+</h3>
+<h3 class="topic">
+<a name="24hmrrm9h31jnhpd5tmls8mm4k">&nbsp;&nbsp;系统变量&rarr;新建JAVA_HOME变量 &#13;
+变量值填写jdk的安装目录(本人是E:\Java\jdk1.7.0)</a>
+</h3>
+<h3 class="topic">
+<a name="2ikv334h7k69tk2vjb74g4tnnq">&nbsp;&nbsp;系统变量&rarr;寻找Path变量&rarr;编辑&#13;
+在变量值最后输入%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;(注意原来Path的变量值末尾有没有;号，如果没有，先输入;号再输入上面的代码)</a>
+</h3>
+<h3 class="topic">
+<a name="58h319l5ss4ckvr5hlfslrrh3m">&nbsp;&nbsp;系统变量&rarr;新建CLASSPATH变量&#13;
+变量值填写.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar(注意最前面有一点)。系统变量配置完毕</a>
+</h3>
+<h3 class="topic">
+<a name="4ov2i87vfna7v3oo7rv0f39hff">&nbsp;&nbsp;检验是否配置成功运行cmd输入java-version(java和-version之间有空格)</a>
+</h3>
+<h3 class="topic">
+<a name="60srnn74pvu5nepn5vbq4bm4ng">&nbsp;cordova</a>
+</h3>
+<div class="notesContainer">
+<p>http://www.yiibai.com/cordova/cordova_contacts.html</p>
+</div>
+<h3 class="topic">
+<a name="64b225olnnuo1t4dsq990eila6">&nbsp;&nbsp;简介</a>
+</h3>
+<h3 class="topic">
+<a name="1tvs6p634ili5pmop7hro00k37">&nbsp;&nbsp;&nbsp;Cordova是一个用基于HTML、CSS和JavaScript的，用于创建跨平台移动应用程序的快速开发平台。它使开发者能够利用iPhone、Android、Palm、Symbian、WP7、Bada和Blackberry等智能手机的核心功能&mdash;&mdash;包括地理定位、加速器、联系人、声音和振动等，此外Cordova拥有丰富的插件，可以调用。</a>
+</h3>
+<h3 class="topic">
+<a name="7gklf6ap7fbi332a7dr3bhgsb5">&nbsp;&nbsp;npm install cordova -g</a>
+</h3>
+<h3 class="topic">
+<a name="22uc9kcn0or4kl0cagrn4kc9c7">&nbsp;&nbsp;创建App&#13;
+cordova create CordovaProject cn.dk.firstcordova CordovaApp</a>
+</h3>
+<h3 class="topic">
+<a name="7b5aahjomtc6u5hsm3c5thimbu">&nbsp;&nbsp;&nbsp;CordovaProject 是创建应用程序的目录名。</a>
+</h3>
+<h3 class="topic">
+<a name="7asseq3fht7b868svkrruu3tdk">&nbsp;&nbsp;&nbsp;cn.dk.firstcordova 是默认的反向域名值(类似Java包的命名)。如果可能使用自己的域名的值</a>
+</h3>
+<h3 class="topic">
+<a name="5o05jf7blh03fpkmon1u3p26jv">&nbsp;&nbsp;&nbsp;CordovaApp 是应用程序的标题</a>
+</h3>
+<h3 class="topic">
+<a name="5v2335tkmc5cas9j4iatrivnm4">&nbsp;&nbsp;添加平台&#13;
+cordova platform add android</a>
+</h3>
+<h3 class="topic">
+<a name="0d8qtqkimbt2e21p7t86d2ndcm">&nbsp;&nbsp;&nbsp;cordova platform add wp8</a>
+</h3>
+<h3 class="topic">
+<a name="24hai1q7foc0d77t37cml10or1">&nbsp;&nbsp;&nbsp;cordova platform add blackberry10</a>
+</h3>
+<h3 class="topic">
+<a name="6l2uvckn0dakm67j8gj8blntgs">&nbsp;&nbsp;&nbsp;删除平台&#13;
+cordova platform rm android</a>
+</h3>
+<h3 class="topic">
+<a name="3d0g0cn1ni9fggd94d344nhp75">&nbsp;&nbsp;&nbsp;其它开发平台</a>
+</h3>
+<p class="summary">(<a href="#0d8qtqkimbt2e21p7t86d2ndcm">cordova platform add wp8</a>, <a href="#24hai1q7foc0d77t37cml10or1">cordova platform add blackberry10</a>)</p>
+<h3 class="topic">
+<a name="127nsk3monm072dlkoce80a9br">&nbsp;&nbsp;构建和运行&#13;
+cordova build android</a>
+</h3>
+<h3 class="topic">
+<a name="3cms416bjjeqtbjp9enuojstkf">&nbsp;&nbsp;拍照 </a>
+</h3>
+<h3 class="topic">
+<a name="609atgail541114lah88tb6u0t">&nbsp;&nbsp;&nbsp;cordova plugin add cordova-plugin-camera</a>
+</h3>
+<h3 class="topic">
+<a name="4ka330srqrpipefu7jsfk8qqg3">&nbsp;&nbsp;&nbsp;js =&gt; navigator.camera.getPicture(success, error, cameraOption)&#13;
+cameraOption API =&gt;</a>
+</h3>
+<h3 class="topic">
+<a name="4nmpt89q01dou1l6as4m492r6k">&nbsp;&nbsp;&nbsp;&nbsp;quality: n =&gt; 定义保存图片的质量，取值范围为[0,100]，100表示质量最高</a>
+</h3>
+<h3 class="topic">
+<a name="72oauto9o6ue60ksilr2uq395d">&nbsp;&nbsp;&nbsp;&nbsp;sourcetype</a>
+</h3>
+<h3 class="topic">
+<a name="3dct6o0bkn8en2btvl9g0p9ueb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;camera.picturesourcetype.PHOTOLIBRARY | 0 =&gt; 打开照片库</a>
+</h3>
+<h3 class="topic">
+<a name="63r0on2bs8unrs3aks37kopj7o">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;camera.picturesourcetype.CAMERA | 1 =&gt; 打开机摄像头(defalut)</a>
+</h3>
+<h3 class="topic">
+<a name="7pbcih4thpf2n2o7oenqm6r51f">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;camera.picturesourcetype.SAVEDPHOTOALBUM | 2 =&gt; 打开保存相册</a>
+</h3>
+<h3 class="topic">
+<a name="6sfvbbn1lbjfhg2taqenihb13p">&nbsp;&nbsp;&nbsp;&nbsp;destinationType</a>
+</h3>
+<h3 class="topic">
+<a name="396ls3l0h0qe2rrqjb2abnrb4v">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Camera.DestinationType.DATA_URL | 0 =&gt; 返回base64编码字符串</a>
+</h3>
+<h3 class="topic">
+<a name="41fdbbrjvfmlb92k9m0ppen5vr">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Camera.DestinationType.FILE_URI | 1 =&gt; 返回图像文件URI</a>
+</h3>
+<h3 class="topic">
+<a name="6ti5ehltjf8uq7iut80lacmquq">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Camera.DestinationType.NATIVE_URI | 2 =&gt; 返回图像本地URI</a>
+</h3>
+<h3 class="topic">
+<a name="1usvma7jgqn7aoptntrk8uismr">&nbsp;&nbsp;&nbsp;&nbsp;allowEdit: true|false&#13;
+设置在选择图片进行操作之前是否对其进行简单的编辑（Android系统会忽略此属性）</a>
+</h3>
+<h3 class="topic">
+<a name="796onbvmaft38pba9045rh7ilo">&nbsp;&nbsp;&nbsp;&nbsp;encodingType</a>
+</h3>
+<h3 class="topic">
+<a name="2ih6u2vrio1efe69dfgq66m1cc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Camera.EncodingType.JPEG | 0</a>
+</h3>
+<h3 class="topic">
+<a name="0n1jne264l2sq5rghla8cu8h7h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Camera.EncodingType.PNG | 1</a>
+</h3>
+<h3 class="topic">
+<a name="1fun74lfndkhidjkrl85lrb4ht">&nbsp;&nbsp;&nbsp;&nbsp;targetWidth =&gt;用于定义缩放图片的宽度，以像素为单位。必须和targetHeight配合使用</a>
+</h3>
+<h3 class="topic">
+<a name="33sk51m0vqm06qr5jngtccjjh9">&nbsp;&nbsp;&nbsp;&nbsp;targetHeight =&gt;  用于定义缩放图片的高度，以像素为单位。必须和targetWidth 配合使用</a>
+</h3>
+<h3 class="topic">
+<a name="7sfnip6rrksqs8b7eo1u0665nm">&nbsp;&nbsp;&nbsp;&nbsp;saveToPhotoAlbum: true|false =&gt; 用于决定是否在捕捉图片之后放入相册</a>
+</h3>
+<h3 class="topic">
+<a name="5t3ktd5jn66cbndmchlba8jhu2">&nbsp;&nbsp;&nbsp;&nbsp;mediaType</a>
+</h3>
+<h3 class="topic">
+<a name="0jv62pcm5goqj573sd41ef2cog">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Camera.MediaType.PICTURE  | 0 =&gt; 只允许选择照片</a>
+</h3>
+<h3 class="topic">
+<a name="4a05vq24ea5ml3vjgmdoq763rd">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Camera.MediaType.VIDEO  | 1 =&gt; 只允许选择视频</a>
+</h3>
+<h3 class="topic">
+<a name="43a3moqsvdn6qo6eth5rbkrog1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Camera.MediaType.ALLMEDIA   | 2 =&gt; 允许选择所有媒体类型</a>
+</h3>
+<h3 class="topic">
+<a name="1416ifii81cugq2hs1dufrd1od">&nbsp;&nbsp;&nbsp;&nbsp;cameraDirection</a>
+</h3>
+<h3 class="topic">
+<a name="4fsn8tnnfgujlqi82qnu67uhc0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Camera.CameraDirection.FRONT | 0 =&gt; 前置摄像头</a>
+</h3>
+<h3 class="topic">
+<a name="2lseo9alahiguslt873t2db4d8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Camera.CameraDirection.BACK | 1 =&gt; 后置摄像头</a>
+</h3>
+<h3 class="topic">
+<a name="1cocfsumbptk7imo62tpd5iq4i">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Camera.CameraDirection.ALLMEDIA | 2 </a>
+</h3>
+<h3 class="topic">
+<a name="709sjr5ufehr2fm10sn391oo0g">&nbsp;&nbsp;振动</a>
+</h3>
+<h3 class="topic">
+<a name="47k0cf5jif7bucdh41lfi3ti78">&nbsp;&nbsp;&nbsp;cordova plugin add cordova-plugin-vibration</a>
+</h3>
+<h3 class="topic">
+<a name="7op480ongnam7gk35dao038aep">&nbsp;&nbsp;&nbsp;pattern = [1000, 1000, 1000, 1000];&#13;
+var time = 3000;&#13;
+navigator.vibrate(pattern|int);&#13;
+//第一个函数使用 time 参数。 此参数用于设置的振动的持续时间。 我们按下 VIBRATION 按钮设备会三秒钟震动一次&#13;
+//第二个函数使用 pattern参数。因此此数组要求设备振动一秒钟，然后等待一秒钟，然后再重复上述过程。</a>
+</h3>
+<h3 class="topic">
+<a name="3tme0tlh776hu0k6ciqc9fjp6r">&nbsp;webchat</a>
+</h3>
+</body>
+</html>
